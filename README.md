@@ -68,7 +68,7 @@ palate-app/
 │   ├── shopping-list.js  # Smart shopping list creation
 │   └── cooking-mode.js   # Revolutionary recipe display
 └── data/
-    └── recipes.json       # Recipe database (15 recipes to start)
+    └── recipes.json       # Recipe database (80 recipes to start)
 ```
 
 ---

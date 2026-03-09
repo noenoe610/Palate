@@ -1,0 +1,118 @@
+/* ===================================
+   BASE.CSS - Reset, Variables, Typography
+   =================================== */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables - Orange Palette */
+:root {
+    /* Colors */
+    --orange-lightest: #FFE5CC;
+    --orange-light: #FFB366;
+    --orange-main: #FF7700;
+    --orange-dark: #CC5F00;
+    --orange-darkest: #994700;
+    
+    /* Text Colors */
+    --text-primary: #994700;
+    --text-secondary: #CC5F00;
+    --text-muted: #FFB366;
+    
+    /* Background */
+    --bg-main: #FFB366;
+    --bg-light: #FFE5CC;
+    --bg-white: #FFFFFF;
+    
+    /* Spacing System (4px base) */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+    
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-pill: 9999px;
+    
+    /* Shadows */
+    --shadow-card: 0 4px 12px rgba(153, 71, 0, 0.15);
+    --shadow-hover: 0 6px 20px rgba(153, 71, 0, 0.2);
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+}
+
+/* Typography */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", sans-serif;
+    background: var(--bg-main);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text-primary);
+}
+
+h1 { font-size: 48px; }
+h2 { font-size: 36px; }
+h3 { font-size: 28px; }
+h4 { font-size: 24px; }
+h5 { font-size: 20px; }
+h6 { font-size: 18px; }
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    color: var(--orange-main);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+a:hover {
+    color: var(--orange-dark);
+}
+
+/* Lists */
+ul, ol {
+    list-style-position: inside;
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.hidden { display: none !important; }
+.visible { display: block; }
+
+/* Focus Styles */
+*:focus {
+    outline: 2px solid var(--orange-main);
+    outline-offset: 2px;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--orange-main);
+}

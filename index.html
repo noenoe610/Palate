@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palate - Personalized Meal Planning</title>
+    <meta name="description" content="Personalized meal planning app that respects your equipment, time, skill level, and cultural preferences">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#FF7700">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Palate">
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo" onclick="app.showPage('home')">Palate</div>
+        <nav class="nav">
+            <a class="nav-link" data-page="home">Home</a>
+            <a class="nav-link" data-page="weekly-plan">Weekly Plan</a>
+            <a class="nav-link" data-page="recipes">Recipes</a>
+            <a class="nav-link" data-page="collections">Collections</a>
+            <a class="nav-link" data-page="hacks">Hacks</a>
+            <a class="nav-link" data-page="preferences">Settings</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search recipes..." id="search-input">
+            <span>🔍</span>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container" id="app-container">
+        <!-- Pages will be dynamically loaded here -->
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/user-data.js"></script>
+    <script src="js/recipes.js"></script>
+    <script src="js/substitutions.js"></script>
+    <script src="js/prices.js"></script>
+    <script src="js/kitchen-hacks.js"></script>
+    <script src="js/onboarding.js"></script>
+    <script src="js/meal-plan.js"></script>
+    <script src="js/shopping-list.js"></script>
+    <script src="js/cooking-mode.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
